@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WAD Project Page</title>
+    <style>
+        .banner {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .banner:hover {
+            background-color: #888;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="contactdetails.html">Contact Details</a>
+        <a href="aboutMe.html">About Me</a>
+    </nav>
+
+    <!-- Title -->
+    <h1 style="font-size: 48px;">My Favorite Things</h1>
+
+    <!-- Image with Description -->
+    <img src="coffee.jpg" alt="Fresh roasted  coffee beans" style="width: 400px; height: auto;">
+    <p>Freshly roasted coffee beans.</p>
+
+    <!-- Clickable Link -->
+    <p><a href="https://www.w3schools.com/" target="_blank">Click here to visit my favorite website!</a></p>
+
+    <!-- Banner Ad -->
+    <div class="banner" onclick="changeAd()">Click or Hover over me for a new ad!</div>
+    <h2>My Favorite Song</h2>
+    <p>This is one of my favorite songs!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/32HANv-bdJs" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <!-- Footer -->
+    <footer>
+        <p>Contact me at: keenan.husselmann39@gmail.com</p>
+        <p>&copy; 2024</p>
+    </footer>
+
+    <!-- JavaScript to Change Ad -->
+    <script>
+        function changeAd() {
+            document.querySelector('.banner').innerHTML = '<img src="coffeeAd.avif" alt="Ad Image" style="width:25%; height:auto;">';;
+            document.querySelector('.banner').style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>
